@@ -19,7 +19,7 @@ body, {
 
 }
 
-.footer, {
+.footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -34,8 +34,13 @@ h1, h2, projectName {
 h1 {
 	text-align: center;
 	margin-top: 85px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	text-align: center;
 	margin-bottom: 75px;
-	font-weight: 200;
+	font-size: 1.8em;
 }
 
 .navbar {
@@ -63,32 +68,32 @@ h1 {
 	font-weight: 200;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
 	color: #FFFFFF;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav > li > a:hover {
 	background-color: #1E90FF;
 	color: #000000;
 	transition: color 1000ms;
 	-webkit-transition: color 1000ms;
 }
 
-.navbar-inverse .navbar-nav>.active>a {
+.navbar-inverse .navbar-nav > .active > a {
 	background-color: #1E90FF;
 	color: #000000;
 	transition: color 1000ms;
 	-webkit-transition: color 1000ms;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover {
+.navbar-inverse .navbar-nav > .active > a:hover {
 	background-color: #1E90FF;
 	color: #000000;
 	transition: color 1000ms;
 	-webkit-transition: color 1000ms;
 }
 
-.navbar-inverse .navbar-nav>.active>a:focus {
+.navbar-inverse .navbar-nav > .active > a:focus {
 	background-color: #1E90FF;
 	color: #000000;
 	transition: color 1000ms;
