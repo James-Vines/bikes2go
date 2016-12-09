@@ -44,60 +44,39 @@ h2 {
 }
 
 .navbar {
-	padding: 0px 2.5%;
-}
-
-.navbar-inverse {
 	background-color: #1E90FF;
-}
+	border_bottom: 2px solid #333333;
+	padding: 0px 2.5%;
 
-.navbar li {
-	font-family: Trebuchet, Helvetica, Arial, sans-serif;
-}
+	a {
+		font-family: Trebuchet, Helvetica, Arial, sans-serif;
+		color: black;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0.05em;
+		transition: color 1000ms;
+		-webkit-transition: color 1000ms;
+		-moz-transition: color 1000ms;
+	}
 
-.navbar {
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	a:active, a:hover {
+		color: #000;
+		background-color: transparent;
+	}
 }
 
 .projectName a {
-	text-transform: uppercase;
-	color: #000000;
-	text-decoration: none;
 	font-size: 1.8em;
 	font-weight: 200;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-	color: #FFFFFF;
+.navbar-inverse .navbar-nav li a {
+	color: #000;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-	background-color: #1E90FF;
-	color: #000000;
-	transition: color 1000ms;
-	-webkit-transition: color 1000ms;
-}
-
-.navbar-inverse .navbar-nav > .active > a {
-	background-color: #1E90FF;
-	color: #000000;
-	transition: color 1000ms;
-	-webkit-transition: color 1000ms;
-}
-
-.navbar-inverse .navbar-nav > .active > a:hover {
-	background-color: #1E90FF;
-	color: #000000;
-	transition: color 1000ms;
-	-webkit-transition: color 1000ms;
-}
-
-.navbar-inverse .navbar-nav > .active > a:focus {
-	background-color: #1E90FF;
-	color: #000000;
-	transition: color 1000ms;
-	-webkit-transition: color 1000ms;
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color: #000;
+	border: 1px solid black;
 }
 
 footer {
