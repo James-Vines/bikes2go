@@ -1,31 +1,37 @@
-<p id="notice"><%= notice %></p>
+<section>
+  <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+  <div class="container">
+    <h1>Bikes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <p>Bike rentals start at £5.16 for the 1st hour and only £30.96 for 6 hours.</p>
+    <p>You can pay at the end of your ride when bikes are returned. After the 1st hour, rental time is pro-rated to the nearest quarter hour. All rentals include the use of a lock and a helmet. For more details on rental rates, please visit our <strong>Rates</strong> page or check out the individual bike choices below.</p>
 
-  <tbody>
+  </div>
+
+<section>
+  <div class="container products">
     <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
 
-<br>
-
-<%= link_to 'New Product', new_product_path %>
+        <div class="show bike-image">
+        <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
+        </div>
+      </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="show detail">
+            <h3><%= product.name %></h3>
+            <h4>£<%= product.price %> per hr.</h4>
+            <h5>
+              <%= link_to 'Show', product %>
+              <%= link_to 'Edit', edit_product_path(product) %>
+              <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </h5>
+          </div>
+        </div>
+      </div>
+    <%end%>
+    </div>
+  </div>
+</section>

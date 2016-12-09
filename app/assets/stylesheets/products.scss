@@ -1,3 +1,51 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h3, 
+h4, 
+h5, 
+p, {
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	color: #333333;
+}
+
+h3, 
+h4, 
+h5, {
+	text-align: center;
+}
+
+// Products
+
+.products {
+	padding: 2% 10%;
+}
+
+.bike-image {
+	display: block;
+	margin: auto;
+	width: 100%;
+	padding: 2%;
+}
+
+.detail {
+	display: block;
+	padding: 10%;
+}
+
+.detail h3{
+	font-size: 1.6em;
+	font-weight: 400;
+}
+
+.detail h5, detail h4{
+	margin: 0px;
+}
+
+.detail p{
+	text-align: left;
+	color: #737373;
+	font-size: 1.0em;
+}
+
