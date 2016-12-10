@@ -4,14 +4,16 @@
   <div class="container">
     <h1>Bikes</h1>
 
-    <p>Bike rentals start at £5.16 for the 1st hour and only £30.96 for 6 hours.</p>
-    <p>You can pay at the end of your ride when bikes are returned. After the 1st hour, rental time is pro-rated to the nearest quarter hour. All rentals include the use of a lock and a helmet. For more details on rental rates, please visit our <strong>Rates</strong> page or check out the individual bike choices below.</p>
+    <p>Bike rentals start at £10 for the 1st day and only £42 for 6 days.</p>
+    <p> All rentals include the use of a lock and a helmet. For more details on rental rates check out the individual bike choices below.</p>
 
   </div>
 
 <section>
   <div class="container products">
     <%= render @products %>
-    <p class="new"><%= link_to 'New Product', new_product_path %></p>
+  </div>
+  <div class="new products detail">
+    <p><%= link_to 'New Product', new_product_path %></p>
   </div>
 </section>

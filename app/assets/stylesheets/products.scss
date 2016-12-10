@@ -38,11 +38,12 @@ h5, {
 	font-weight: 400;	
 }
 
-.detail h5, .detail h4, .detail p{
+.detail h5, .detail h4, .detail p, .show-detail p{
 	margin: 0px;
 }
 
-.detail p{
+.detail p,
+.show-detail p {
 	color: #737373;
 	font-size: 1.0em;
 	padding-top: 5px;
@@ -50,7 +51,12 @@ h5, {
 
 .detail h3,
 .detail h4,
-.detail p {
+.detail h5,
+.detail p,
+.show-detail h3,
+.show-detail h4,
+.show-detail h5,
+.show-detail p {
 	text-align: left;	
 }
 
@@ -58,3 +64,37 @@ h5, {
 	text-align: center;
 }
 
+// Show
+
+.show-image {
+	display: block;
+	margin: auto;
+	width: 85%;
+}
+
+.show {
+	padding-top: 10em;
+}
+
+.show-detail {
+	display: block;
+	padding: 5%;
+}
+
+.show-detail h3{
+	font-size: 1.8em;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+
+.show-detail h5, show-detail h4{
+	margin: 0px;
+}
+
+.show-detail h5 {
+	padding-bottom: 5px;
+}
+
+.new {
+	text-align: center;
+}

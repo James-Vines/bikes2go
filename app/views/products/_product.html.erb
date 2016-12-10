@@ -1,13 +1,13 @@
 <div class="row">
   <div class="col-md-6 col-sm-6 col-xs-12">
-    <div class="show bike-image">
+    <div class="products bike-image">
       <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
     </div>
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12">
-    <div class="show detail">
+    <div class="products detail">
       <h3><%= product.name %></h3>
-      <h4>£<%= product.price %> per hr.</h4>
+      <h4>£<%= product.price %> per day.</h4>
       <p><%= product.description %></p>
       <p>
         <%= link_to 'Show', product %>

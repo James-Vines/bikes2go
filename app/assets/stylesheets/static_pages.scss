@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/***** General *****/
+
 * { 
 	box-sizing: border-box; 
 	margin: 0;
@@ -16,24 +18,11 @@ body, {
 	margin: 0 auto;
 	color: black;
 	margin-bottom: 60px;
-
-}
-
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-}
-
-h1, h2, projectName {
-	font-family: arial;
-	font-weight: 200;
 }
 
 h1 {
 	text-align: center;
-	margin-top: 85px;
+	margin-top: 135px;
 	margin-bottom: 40px;
 }
 
@@ -46,6 +35,8 @@ h2 {
 .landing-page h2 {
 	margin-top: 85px;
 }
+
+/***** Navbar *****/
 
 .navbar {
 	background-color: #1E90FF;
@@ -83,12 +74,22 @@ h2 {
 	border: 1px solid black;
 }
 
+.navbar-collapse {
+	text-align: right;
+}
+
+/***** Footer *****/
+
 footer {
 	text-align: center;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	background-color: #FFFFFF;
 	color: #000000;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
 }
 
 #copyright {
@@ -128,5 +129,74 @@ footer {
 }
 
 .carousel-indicators li {
+	border: 1px solid #333333;
+}
+
+/***** Index Page *****/
+
+.intro p {
+	padding: 10px 0;
+}
+
+.intro-image {
+	padding: 3px;
+	margin: 10px;
+	border: 1px solid #333333;
+}
+
+.welcome {
+	font-size: 1.1em;
+}
+
+/***** Info *****/
+
+.glyphicon {
+	font-size: 1.4em;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.about {
+	padding-bottom: 25px;
+} 
+
+.about h3 {
+	text-align: left;
+}
+
+#contact-list {
+	padding-top: 20px;
+}
+
+/**** Typography ****/
+
+h1, h2, h3, h4, projectName {
+	font-family: Trebuchet, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, projectName {
+	font-weight: 200;
+}
+
+p, li, td {
+	font-family: Georgia, Times New Roman, serif;
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+.welcome p, .intro p {
+	padding: 10px 0;
+}
+
+.image {
+	padding: 3px;
+	margin: 10px;
 	border: 1px solid #333333;
 }
