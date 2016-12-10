@@ -31,21 +31,30 @@ h5, {
 
 .detail {
 	display: block;
-	padding: 10%;
 }
 
 .detail h3{
 	font-size: 1.6em;
-	font-weight: 400;
+	font-weight: 400;	
 }
 
-.detail h5, detail h4{
+.detail h5, .detail h4, .detail p{
 	margin: 0px;
 }
 
 .detail p{
-	text-align: left;
 	color: #737373;
 	font-size: 1.0em;
+	padding-top: 5px;
+}
+
+.detail h3,
+.detail h4,
+.detail p {
+	text-align: left;	
+}
+
+.new {
+	text-align: center;
 }
 

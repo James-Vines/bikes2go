@@ -95,3 +95,38 @@ footer {
 	position: relative;
 	bottom: 3px;
 } 
+
+/***** Carousel Start *****/
+
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+.carousel {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	padding: 100px 0px;
+}
+
+.carousel .carousel-inner {
+	height: 100%;
+}
+
+.carousel .carousel-inner img {
+		display:block;
+		object-fit: cover;
+}
+
+.carousel-caption {
+	top: 5%;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-indicators li {
+	border: 1px solid #333333;
+}

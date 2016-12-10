@@ -25,14 +25,18 @@
           <span class="icon-bar"></span>
         </button>
         <div class="projectName navbar-brand">
-          <a href="#home"><%= image_tag("Logo.png", class: "img-responsive my-image") %></a>
+          <%= link_to static_pages_index_path do %>
+            <%= image_tag("Logo.png", class: "img-responsive my-image") %>
+          <% end %>
         </div>
       </div>
       <!-- Navbar Collapse -->
       <div class="navbar-collapse collapse">
         <ul class="nav nav-pills navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><%= link_to "Info", static_pages_about_path %></li>          
+          <li><a href="#rates">Rates</a></li>
+          <li><%= link_to "Bikes", products_path %></li>          
+          <li><%= link_to "Contact", static_pages_contact_path %></li>
         </ul>
       </div> 
     </nav>
