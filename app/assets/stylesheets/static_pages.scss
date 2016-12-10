@@ -43,10 +43,14 @@ h2 {
 	font-size: 1.8em;
 }
 
+.landing-page h2 {
+	margin-top: 85px;
+}
+
 .navbar {
 	background-color: #1E90FF;
 	border_bottom: 2px solid #333333;
-	padding: 0px 2.5%;
+	padding: 0px 2.5% 0px 0px;
 
 	a {
 		font-family: Trebuchet, Helvetica, Arial, sans-serif;
