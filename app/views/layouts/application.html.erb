@@ -32,6 +32,13 @@
       </div>
       <!-- Navbar Collapse -->
       <div class="navbar-collapse collapse">
+        <%= form_tag("/products", method: "get", class: "navbar-form navbar-left", role: "search") do %>
+          <div class="form-group">
+            <%= label_tag(:q, "Search for:", class: "sr-only") %>
+            <%= text_field_tag(:q, nil, class: "form-control", placeholder: "Enter text here") %>
+          </div>
+          <%= button_tag("Search", class: "btn btn-default btn-default-transparent") %>
+        <% end %>        
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Info", static_pages_about_path %></li>          
           <li><%= link_to "Bikes", products_path %></li>          

@@ -5,7 +5,8 @@
 h3, 
 h4, 
 h5, 
-p, {
+p,
+.form {
 	font-family: 'Trebuchet MS', Arial, sans-serif;
 	color: #333333;
 }
@@ -38,7 +39,10 @@ h5, {
 	font-weight: 400;	
 }
 
-.detail h5, .detail h4, .detail p, .show-detail p{
+.detail h5, 
+.detail h4, 
+.detail p, 
+.show-detail p{
 	margin: 0px;
 }
 
@@ -87,7 +91,8 @@ h5, {
 	margin-bottom: 40px;
 }
 
-.show-detail h5, show-detail h4{
+.show-detail h5, 
+.show-detail h4{
 	margin: 0px;
 }
 
@@ -97,4 +102,25 @@ h5, {
 
 .new {
 	text-align: center;
+}
+
+// Form
+
+.form h4, 
+.form h5 {
+	text-align: left;
+}
+
+.form {
+	border: 2px solid silver;
+	background-color: #eeeded;
+	padding: 20px;
+}
+
+.field {
+	padding: 20px;
+}
+
+.actions {
+	padding: 20px;
 }
