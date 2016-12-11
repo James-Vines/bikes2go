@@ -1,9 +1,37 @@
 <section>
+
 	<div class="container">
-		<h1>Contact</h1>
-		<p>Content to come soon.</p>
-		<p>Telephone :</p>
-		<p>Email :</p>
-		<p>Address : </p>
-	</div>
-</section>		
+		<h1>Contact Us</h1>
+
+		<div align="center">
+		<p>Whether it's a booking or another general enquiry, please use the form below.</p>
+		</div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <%= flash[:notice] %>
+
+    <%= form_tag("/static_pages/thank_you") do %>
+    <div class="row">    	         
+      <div class="col-md-12">
+      	<div class="form-group">
+          <%= label_tag :name %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>       
+       	</div>
+       	<div class="form-group">        
+          <%= label_tag :email, "Email Address" %>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+       	</div>
+       	<div class="form-group">       
+          <%= label_tag :message %>
+          <%= text_field_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+       	</div>
+     	</div>
+   	</div>
+    <%= submit_tag "Send" %>
+    <% end %>  
+ 	</div>
+</section>	
