@@ -111,16 +111,20 @@ h5, {
 	text-align: left;
 }
 
-.form {
-	border: 2px solid silver;
-	background-color: #eeeded;
-	padding: 20px;
+form-label {
+	color: #333;
 }
 
-.field {
-	padding: 20px;
+.form {
+	border: 2px solid #333;
+	background-color: #1E90FF;
+ 	padding: 20px;
 }
 
 .actions {
-	padding: 20px;
+	padding: 20px 0 20px 0;
+}
+
+.btn {
+	border: 1px solid #333;
 }

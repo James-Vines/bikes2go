@@ -14,23 +14,24 @@
       <% end %>
 
       <div class="field">
-        <h4><%= f.label :name, class: "form-label col-xs-4 col-sm-2" %></h4>
-        <h5><%= f.text_field :name, class: "form-input col-xs-8 col-sm-10" %></h5>
+        <h4><%= f.label :name, class: "form-label" %></h4>
+        <h5><%= f.text_field :name, class: "form-input form-control", placeholder: "Enter Name" %></h5>
       </div>
 
       <div class="field">
-        <h4><%= f.label :description, class: "form-label col-xs-4 col-sm-2" %></h4>
-        <h5><%= f.text_area :description, class: "form-input col-xs-8 col-sm-10" %></h5>  
+        <h4><%= f.label :description, class: "form-label" %></h4>
+        <h5><%= f.text_area :description, class: "form-input form-control", placeholder: "Enter Product Description" %>  
       </div>
 
       <div class="field">
-        <h4><%= f.label :image_url, class: "form-label col-xs-4 col-sm-2" %></h4>
-        <h5><%= f.text_field :image_url, class: "form-input col-xs-8 col-sm-10" %></h5>
+        <h4><%= f.label :image_url, class: "form-label" %></h4>
+        <h5><%= f.text_field :image_url, class: "form-input form-control", placeholder: "Enter Image url" %></h5>
       </div>
 
       <div class="field">
-        <h4><%= f.label :price, class: "form-label col-xs-4 col-sm-2" %></h4>
-        <h5><%= f.text_field :price, class: "form-input col-xs-8 col-sm-10" %></h5>  </div>  
+        <h4><%= f.label :price, class: "form-label" %></h4>
+        <h5><%= f.text_field :price, class: "form-input form-control", placeholder: "Enter Price (£'s)" %></h5>  
+      </div>  
 
       <div class="actions">
         <%= f.submit %>

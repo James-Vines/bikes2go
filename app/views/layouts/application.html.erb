@@ -31,21 +31,33 @@
         </div>
       </div>
       <!-- Navbar Collapse -->
-      <div class="navbar-collapse collapse">
-        <%= form_tag("/products", method: "get", class: "navbar-form navbar-left", role: "search") do %>
+      <div class="navbar-collapse collapse">    
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Info", static_pages_about_path %></li>          
+          <li><%= link_to "Bikes", products_path %></li>          
+          <li><%= link_to "Contact", static_pages_contact_path %></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+            <% end %>
+          </li>
+        </ul>
+        <%= form_tag("/products", method: "get", class: "navbar-form navbar-right", role: "search") do %>
           <div class="form-group">
             <%= label_tag(:q, "Search for:", class: "sr-only") %>
             <%= text_field_tag(:q, nil, class: "form-control", placeholder: "Enter text here") %>
           </div>
           <%= button_tag("Search", class: "btn btn-default btn-default-transparent") %>
         <% end %>        
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Info", static_pages_about_path %></li>          
-          <li><%= link_to "Bikes", products_path %></li>          
-          <li><%= link_to "Contact", static_pages_contact_path %></li>
-        </ul>
       </div> 
     </nav>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
 
