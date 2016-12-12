@@ -7,3 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Product.create(:name => "seed-generated product", :description => "I also created this product without using the HTML form!")
+
+Comment.create!(user: User.first, product: Product.first, rating: 1, body: "bad")
+Comment.create!(user: User.first, product: Product.first, rating: 4, body: "nice")
+Comment.create!(user: User.first, product: Product.first, rating: 2, body: "meh")
