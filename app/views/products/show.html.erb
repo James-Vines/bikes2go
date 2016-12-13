@@ -28,27 +28,10 @@
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
 				<h3> User Ratings:</h3>
-				<div class="row">
-					<div class="col-md-6 col-sm-12">						
-						<div class="show-rating">
-							<h4>Highest Rating</h4>
-							<h5><%= @product.highest_rating_comment.rating %>/5</h5>					
-							<h5>"<%= @product.highest_rating_comment.body %>"</h5>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="show-rating">
-							<h4>Lowest Rating</h4>
-							<h5><%= @product.lowest_rating_comment.rating %>/5</h5>					
-							<h5>"<%= @product.lowest_rating_comment.body %>"</h5>
-						</div>	
-					</div>
-				</div>					
+					
 					<%= render partial: "new_comment" %>	
 			</div>
-			<div class="col-md-6 col-sm-12">
-				<%= render partial: "comments" %>
-			</div>
+
 		</div>
 		<div class="new show-detail">
 			<p><%= link_to 'Back', products_path %></p>
