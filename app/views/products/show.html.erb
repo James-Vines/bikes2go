@@ -9,7 +9,8 @@
 			<div class="col-md-6 col-sm-12">
 				<div class="show-detail">
 					<h3><%= @product.name %></h3>
-					<h4>£<%= @product.price %> per hr.</h4>					
+					<h4>£<%= @product.price %> per hr.</h4>
+					<h4>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></h4>					
 					<h5><%= @product.description %></h5>
 	 				<p>You can pay at the end of your ride when bikes are returned.<br>
    				After the 1st hour, rental time is pro-rated to the nearest quarter hour. <br>
@@ -17,17 +18,16 @@
    				<br> 
    				For more details on rental rates, please visit our <strong>Rates</strong> page or check out the individual bike choices below.</p>				
 					<p>
-						<%= link_to 'Edit', edit_product_path(@product) %> |
-						<%= link_to 'Back', products_path %>
+						<%= link_to 'Edit Description', edit_product_path(@product) %>
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container rating">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<h3>User Ratings</h3>
+				<h3> User Ratings:</h3>
 				<div class="row">
 					<div class="col-md-6 col-sm-12">						
 						<div class="show-rating">
@@ -43,8 +43,15 @@
 							<h5>"<%= @product.lowest_rating_comment.body %>"</h5>
 						</div>	
 					</div>
-				</div>
+				</div>					
+					<%= render partial: "new_comment" %>	
 			</div>
+			<div class="col-md-6 col-sm-12">
+				<%= render partial: "comments" %>
+			</div>
+		</div>
+		<div class="new show-detail">
+			<p><%= link_to 'Back', products_path %></p>
 		</div>
 	</div>	
 </section>
