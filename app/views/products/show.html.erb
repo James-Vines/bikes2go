@@ -44,14 +44,17 @@
 						</div>	
 					</div>
 				</div>					
-					<%= render partial: "new_comment" %>	
+				<%= render partial: "new_comment" %>
+				<div class="detail">
+    			<p>
+      			<%= link_to 'Back', products_path %>
+    			</p>
+  			</div>	
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<%= render partial: "comments" %>
+				<%= will_paginate @comments %>
 			</div>
-		</div>
-		<div class="new show-detail">
-			<p><%= link_to 'Back', products_path %></p>
-		</div>
-	</div>	
+		</div>		
+	</div>
 </section>
