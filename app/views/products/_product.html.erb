@@ -9,6 +9,12 @@
       <h3><%= product.name %></h3>
       <h4>£<%= product.price %> per day.</h4>
       <p><%= product.description %></p>
+                <p>
+            <% if signed_in? && current_user.admin? %>
+              <%= link_to 'Edit Description', edit_product_path(product) %> | 
+              <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+          </p>
     </div>
   </div>
 </div>

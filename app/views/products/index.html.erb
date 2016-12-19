@@ -13,8 +13,11 @@
     <%= render @products %>
     <div class="detail link">
       <p>
-        <%= link_to 'Back', static_pages_index_path %>  |
-        <%= link_to 'New Product', new_product_path %>
+        <%= link_to 'Back', static_pages_index_path %>
+
+        <% if signed_in? && current_user.admin? %>  
+          | <%= link_to 'New Product', new_product_path %>
+        <% end %>
       </p>
     </div>
   </div>
