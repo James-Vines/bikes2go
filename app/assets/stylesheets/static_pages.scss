@@ -44,7 +44,7 @@ h2 {
 
 .navbar {
 	background-color: #1E90FF;
-	border_bottom: 2px solid #333333;
+	border-bottom: 2px solid #333333;
 	padding: 0px 2.5% 0px 0px;
 
 	a {
@@ -73,7 +73,8 @@ h2 {
 	color: #000;
 }
 
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
 	background-color: #000;
 	border: 1px solid black;
 }
@@ -211,21 +212,31 @@ ul {
 
 /**** Typography ****/
 
-h1, h2, h3, h4, projectName {
+h1, 
+h2, 
+h3, 
+h4, 
+projectName {
 	font-family: Trebuchet, Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, projectName {
+h1, 
+h2, 
+h3, 
+projectName {
 	font-weight: 200;
 }
 
-p, li, td {
+p, 
+li, 
+td {
 	font-family: Georgia, Times New Roman, serif;
 	font-size: 1.4em;
 	line-height: 1.5;
 }
 
-.welcome p, .intro p {
+.welcome p, 
+.intro p {
 	padding: 10px 0;
 }
 
