@@ -140,7 +140,9 @@ form-label {
   cursor: default; 
 }
   
-.pagination a, .pagination span {
+.pagination a, 
+.pagination span,
+.link p {
   padding: 0.2em 0.3em; 
 }
   
@@ -157,12 +159,16 @@ form-label {
   line-height: 1.5;
 }
   
-.pagination a {
+.pagination a, 
+.link {
   text-decoration: none;
   color: #333;
 }
 
-.pagination a:hover, .pagination a:focus {
+.pagination a:hover, 
+.pagination a:focus,
+.link a:hover,
+.link a:focus {
   text-decoration: none; 
   font-style: normal;
   background-color: #1E90FF;

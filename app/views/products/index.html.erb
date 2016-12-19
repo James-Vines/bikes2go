@@ -11,11 +11,11 @@
 <section>
   <div class="container products">
     <%= render @products %>
-  </div>
-  <div class="new products detail">
-    <p>
-      <%= link_to 'Back', static_pages_index_path %>  |
-      <%= link_to 'New Product', new_product_path %>
-    </p>
+    <div class="detail link">
+      <p>
+        <%= link_to 'Back', static_pages_index_path %>  |
+        <%= link_to 'New Product', new_product_path %>
+      </p>
+    </div>
   </div>
 </section>
