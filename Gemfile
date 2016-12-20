@@ -33,6 +33,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  #rspec for bdd testing
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
