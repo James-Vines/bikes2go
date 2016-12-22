@@ -16,7 +16,12 @@
    				After the 1st hour, rental time is pro-rated to the nearest quarter hour. <br>
    				All rentals include the use of a lock and a helmet.<br>
    				<br> 
-   				For more details on rental rates, please visit our <strong>Rates</strong> page or check out the individual bike choices below.</p>				
+   				For more details on rental rates, please visit our <strong>Rates</strong> page or check out the individual bike choices below.</p>
+   				<p>
+   					<%= form_tag "/payments/create" do %>
+  						<%= render partial: "shared/stripe_checkout_button" %>
+						<% end %>
+					</p>				
 				</div>
 			</div>
 		</div>
