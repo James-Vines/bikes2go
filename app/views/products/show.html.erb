@@ -19,6 +19,7 @@
    				For more details on rental rates, please visit our <strong>Rates</strong> page or check out the individual bike choices below.</p>
    				<p>
    					<%= form_tag "/payments/create" do %>
+   						<%= hidden_field_tag(:product_id, @product.id) %>
   						<%= render partial: "shared/stripe_checkout_button" %>
 						<% end %>
 					</p>				
