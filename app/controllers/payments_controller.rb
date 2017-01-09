@@ -14,7 +14,15 @@ class PaymentsController < ApplicationController
       	:source => token,
       	:description => params[:stripeEmail]
     	)
-  	
+
+    	if charge.paid
+    		Order.create(
+    			:product_id => @product_id,
+    			:user_id => @current_user.id
+    			:total => @product.price
+    		}
+			end
+
   	rescue Stripe::CardError => e
     	# The card has been declined
     	body = e.json_body
@@ -22,6 +30,6 @@ class PaymentsController < ApplicationController
     	flash[:error] = "Apologies, there appears to have been an error processing your payment: #{err[:message]}"
 		end    	
 
-  redirect_to payments_thanks_message_path
+  redirect_to payments_thank_you_path
 	end
 end
