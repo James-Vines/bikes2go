@@ -23,5 +23,5 @@ class PaymentsController < ApplicationController
 		end    	
 
   redirect_to payments_thanks_message_path
-
+	end
 end
