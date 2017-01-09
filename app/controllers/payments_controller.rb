@@ -20,7 +20,7 @@ class PaymentsController < ApplicationController
     			:product_id => @product_id,
     			:user_id => @current_user.id
     			:total => @product.price
-    		}
+    		)
 			end
 
   	rescue Stripe::CardError => e
