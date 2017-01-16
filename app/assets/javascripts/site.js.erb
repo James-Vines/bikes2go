@@ -13,4 +13,13 @@ $(document).on('turbolinks:load', function(){
 		return $(this).attr('data-score');
     }
   });
+
+  $('.img-zoom').elevateZoom({
+  	easing: true,
+  	tint: true,
+  	tintColour: '#1E90FF',
+  	tintOpacity: 0.75,
+  	zoomWindowWidth: 400,
+  	zoomWindowHeight: 400
+  });
 });
