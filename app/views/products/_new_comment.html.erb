@@ -3,7 +3,7 @@
 <div class="row">
 	<div class="col-md-6 col-sm-12">		
 		<div class="show-comment">						
-			<%= form_for([@product, @product.comments.build]) do |f| %>
+			<%= form_for([@product, @product.comments.build], remote: true) do |f| %>
 					
 			<div class="field">
 				<h5><%= f.text_area :body, class: "form-input form-control", placeholder: "Enter Comment" %></h5>

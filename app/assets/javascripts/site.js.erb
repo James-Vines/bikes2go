@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function(){
+var refreshRating = function(){
   $('.rating').raty( { path: '/assets', starHalf:"<%= image_path 'star-half.png' %>",
   	starOff:"<%= image_path 'star-off.png' %>", 
 		starOn:"<%= image_path 'star-on.png' %>", 
@@ -13,6 +13,10 @@ $(document).on('turbolinks:load', function(){
 		return $(this).attr('data-score');
     }
   });
+};
+
+$(document).on('turbolinks:load ajaxSuccess', function(){
+  refreshRating();
 
   $('.img-zoom').elevateZoom({
   	easing: true,
