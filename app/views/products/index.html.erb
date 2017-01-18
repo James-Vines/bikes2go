@@ -10,7 +10,9 @@
 
 <section>
   <div class="container products">
-    <%= render @products %>
+    <% cache (cache_key_for_products) do %>
+      <%= render @products %>
+    <% end %>
     <div class="detail link">
       <p>
         <%= link_to 'Back', static_pages_index_path %>

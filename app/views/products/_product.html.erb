@@ -1,4 +1,5 @@
 <div class="row">
+  <% cache product do %>
   <div class="col-md-6 col-sm-6 col-xs-12">
     <div class="products bike-image">
       <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
@@ -17,5 +18,6 @@
           </p>
     </div>
   </div>
+  <%end %>
 </div>
 
