@@ -50,10 +50,12 @@
 						</div>	
 					</div>
 				</div>
-				<% end %>					
+				<% end %>				
 				<%= render partial: "new_comment" %>
 			</div>
+			
 			<div class="col-md-6 col-sm-12">
+				<div class="alert alert-info" style="display:none" role="alert">A new comment was just posted!</div>
 				<%= render partial: "comments" %>
 				<%= will_paginate @comments %>
 			</div>

@@ -92,5 +92,7 @@ Rails.application.configure do
     :socket_timeout => 1.5,
     :socket_failure_delay => 0.2,
     :down_retry_delay => 60
-    }  
+    }
+  config.web_socket_server_url = "wss://bikes2go.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://bikes2go.herokuapp.com', 'http://bikes2go.herokuapp.com']
 end
