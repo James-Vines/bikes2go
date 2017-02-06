@@ -22,7 +22,7 @@ body, {
 
 h1 {
 	text-align: center;
-	margin-top: 135px;
+	margin-top: 35px;
 	margin-bottom: 40px;
 }
 
@@ -40,16 +40,24 @@ h2 {
 	text-align: center;
 	margin-top: 75px;	
 }
+
+.caption h1 {
+	text-align: center;	
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.top {
+	margin-top: 50px;
+}
+
 /***** Navbar *****/
 
 .navbar {
-	background-color: #1E90FF;
-	border-bottom: 2px solid #333333;
 	padding: 0px 2.5% 0px 0px;
 
 	a {
 		font-family: Trebuchet, Helvetica, Arial, sans-serif;
-		color: black;
 		text-transform: uppercase;
 		text-decoration: none;
 		letter-spacing: 0.05em;
@@ -59,7 +67,6 @@ h2 {
 	}
 
 	a:active, a:hover {
-		color: #000;
 		background-color: transparent;
 	}
 }
@@ -69,13 +76,8 @@ h2 {
 	font-weight: 200;
 }
 
-.navbar-inverse .navbar-nav li a {
-	color: #000;
-}
-
 .navbar-inverse .navbar-toggle:focus, 
 .navbar-inverse .navbar-toggle:hover {
-	background-color: #000;
 	border: 1px solid black;
 }
 
@@ -106,6 +108,37 @@ footer {
 	bottom: 3px;
 } 
 
+/***** Breadcrumb *****/
+
+.breadcrumb {
+	background: rgba(255, 255, 255, 1); 
+	border: 0px solid rgba(245, 245, 245, 1); 
+	border-radius: 4px; display: block;
+}
+
+.breadcrumb li {
+	color: #737373;
+	font-size: 1.0em;
+}
+
+.breadcrumb a {
+	color: rgba(66, 139, 202, 1);
+}
+
+.breadcrumb a:hover {
+	color: rgba(42, 100, 150, 1);
+	background: rgba(255, 255, 255, 1);
+}
+
+.breadcrumb>.active {
+	color: rgba(153, 153, 153, 1);
+}
+
+.breadcrumb>li+li:before {
+	color: rgba(204, 204, 204, 1);
+	content: "\002F\00a0";
+}
+
 /***** Carousel Start *****/
 
 .container-fluid {
@@ -117,7 +150,7 @@ footer {
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
-	padding: 100px 0px;
+	padding: 10px 0px;
 }
 
 .carousel .carousel-inner {
@@ -195,13 +228,19 @@ ul {
 
 .panel {
 	margin-top: 10em;
-	background-color: #1E90FF;
 	border: 2px solid #333;
+	background-color: #f3f3f3;
 }
 
-.panel-body p {
-	color: white;
-	text-align: center;
+/***** FAQ *****/
+
+.panel-title, .panel-body {
+	text-align: left;	
+}
+
+.faq {
+	background-color: #ffffff;
+	margin-top: 0px;
 }
 
 /**** Message ****/
@@ -216,9 +255,11 @@ h1,
 h2, 
 h3, 
 h4, 
-projectName {
+ {
 	font-family: Trebuchet, Helvetica, Arial, sans-serif;
 }
+
+
 
 h1, 
 h2, 
@@ -244,4 +285,19 @@ td {
 	padding: 3px;
 	margin: 10px;
 	border: 1px solid #333333;
+}
+
+.how-it-works h3,
+.how-it-works h4,
+.how-it-works h5, {
+	text-align: left;
+}
+
+.how-it-works .my-image {
+	padding-top: 15px;
+}
+
+.logo {
+	margin-left: 30px;
+	margin-top: -13px;
 }

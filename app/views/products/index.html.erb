@@ -1,11 +1,14 @@
 <section>
 
-  <div class="container">
-    <h1>Bikes</h1>
+  <div class="container top">
+    <ol class="breadcrumb">
+      <li><%= link_to "Home", static_pages_landing_page_path %></li>
+      <li class="active">Bikes</li>
+    </ol>
+    <h1>Used Bikes</h1>
 
-    <p>Bike rentals start at £10 for the 1st day and only £42 for 6 days.</p>
-    <p> All rentals include the use of a lock and a helmet. For more details on rental rates check out the individual bike choices below.</p>
-
+    <p>Used bikes are on sale now! (Not all sizes/styles are available).</p>
+    <p>Please come down to the store to check out the selection. All bikes sales come with a 30 day mechanical warranty.</p>
   </div>
 
 <section>
@@ -15,7 +18,7 @@
     <% end %>
     <div class="detail link">
       <p>
-        <%= link_to 'Back', static_pages_index_path %>
+
 
         <% if signed_in? && current_user.admin? %>  
           | <%= link_to 'New Product', new_product_path %>

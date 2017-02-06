@@ -1,5 +1,10 @@
 <section>
-	<div class="container show">
+  <div class="container top">
+    <ol class="breadcrumb">
+      <li><%= link_to "Home", static_pages_landing_page_path %></li>
+      <li><%= link_to "Bikes", products_path %></li>
+      <li class="active"><%= @product.name %></li>
+    </ol>
 		<div class="row" data-product-id="<%= @product.id %>">
 			<% cache @product do %>
 			<div class="col-md-6 col-xs-12 ">
@@ -60,10 +65,5 @@
 				<%= will_paginate @comments %>
 			</div>
 		</div>	
-		<div class="detail link">
-    	<p>
-    		<%= link_to 'Back', products_path %>
-    	</p>
-  	</div>		
   </div>
 </section>

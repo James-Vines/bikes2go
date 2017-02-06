@@ -25,16 +25,31 @@
           <span class="icon-bar"></span>
         </button>
         <div class="projectName navbar-brand">
-          <%= link_to static_pages_index_path do %>
-            <%= image_tag("Logo.png", class: "img-responsive my-image") %>
+          <%= link_to static_pages_landing_page_path do %>
+            <%= image_tag("logo-small.png", class: "img-responsive logo") %>
           <% end %>
         </div>
       </div>
       <!-- Navbar Collapse -->
       <div class="navbar-collapse collapse">    
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Info", static_pages_about_path %></li>          
-          <li><%= link_to "Bikes", products_path %></li>          
+        <ul class="nav navbar-nav navbar-right">        
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Info <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Hours & Location", static_pages_hours_path %></li>
+            <li><%= link_to "How it Works", static_pages_how_it_works_path %></li>
+            <li><%= link_to "FAQ's", static_pages_faqs_path %></li>
+            <li><a href="#">Fave Rides</a></li>
+          </ul>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bikes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "For Sale", products_path %></li>  
+            <li><a href="#">To Rent</a></li>
+          </ul>
+          </li>                  
           <li><%= link_to "Contact", static_pages_contact_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

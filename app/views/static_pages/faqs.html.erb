@@ -1,0 +1,137 @@
+<section>
+  <div class="container top">
+    <ol class="breadcrumb">
+      <li><%= link_to "Home", static_pages_landing_page_path %></li>
+      <li class="active">How it Works</li>
+    </ol>
+
+    <h1>FAQ</h1>           
+
+    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+      <div class="panel-group faq" id="accordion">
+        <div class="panel panel-default faq">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordian" href="#collapseOne">
+              1. What do I need to bring?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body faq">
+              <p>Rentals require a credit card plus a piece of government issued ID (driver’s license, passport). If you don’t have a credit card you’ll need to bring a piece of government issued ID and a deposit of £50 per bike (cash or debit).</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordian" href="#collapseTwo">
+              2. Do I need to wear a helmet?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body faq">
+              <p> There is no British law to compel cyclists, of any age, to wear helmets when cycling, even though the Highway Code suggests that cyclists should wear a cycle helmet.</p>
+              <p>All rentals come with complimentary use of a helmet. We also have locks should you need them.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordian" href="#collapseThree">
+              3. What should I wear?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body faq">
+              <p> Dress for the weather. We do have ponchos and some bikes with mudguards for rainy days.</p> 
+              <p>Also, try to wear sensible shoes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordian" href="#collapseFour">
+              4. Do I pay at the end of my ride?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body faq">
+              <p>Yes, you pay for your bike rental once you have returned. You can take as long as you want to explore.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordian" href="#collapseFive">
+              5. How is the rental time calculated?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body faq">
+              <p>There is a minimum rental fee of 1 hour, after that ride time is calculated to the nearest quarter of an hour.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordian" href="#collapseSix">
+              6. When is the latest I can rent a bike?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse">
+            <div class="panel-body faq">
+              <p>We rent bikes up until one hour before our closing time.</p> 
+              <p>Please note that our operating hours change seasonally as the days grow shorter or longer. (See our<%= link_to "Current Operating Hours", static_pages_hours_path %>)</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordian" href="#collapseSeven">
+              7. Do I need to book in advance?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSeven" class="panel-collapse collapse">
+            <div class="panel-body faq">
+              <p>We have plenty of bikes to get you out for a ride. Just come by and we'll have you out riding in minutes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordian" href="#collapseEight">
+              8. Can I book a large group?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseEight" class="panel-collapse collapse">
+            <div class="panel-body faq">
+              <p>If you know the date and time of your ride and have a group of 10 or more you can book ahead.</p> 
+              <p>Group rates are available for rides of 2 hours or longer.</p>
+              <p><%= link_to "Request", static_pages_contact_path %> a booking now to secure your ride...details can be adjusted closer to the ride day (final numbers, bike style, etc.)</p> 
+              <p>You can even cancel your booking without any fees up to 24 hrs before your ride time.</p>
+              <p>Rental bookings require credit card security and are subject to our cancellation policy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <%= image_tag("bikes.jpg", class: "img-responsive intro-image") %>
+    </div>
+  </div>
+</section>

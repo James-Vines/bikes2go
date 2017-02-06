@@ -10,6 +10,12 @@ Rails.application.routes.draw do
 
   get 'static_pages/about'
 
+  get 'static_pages/hours'  
+
+  get 'static_pages/how_it_works' 
+  
+  get 'static_pages/faqs'    
+
   get 'static_pages/contact'
 
   get 'static_pages/index'
