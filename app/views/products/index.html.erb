@@ -7,7 +7,7 @@
     </ol>
     <h1>Used Bikes</h1>
 
-    <p>Used bikes are on sale now! (Not all sizes/styles are available).</p>
+    <p>Used bikes are on sale now! (Not all sizes/styles are available). We are currently selling off our 2015 fleet of bikes.</p>
     <p>Please come down to the store to check out the selection. All bikes sales come with a 30 day mechanical warranty.</p>
   </div>
 
@@ -18,10 +18,8 @@
     <% end %>
     <div class="detail link">
       <p>
-
-
         <% if signed_in? && current_user.admin? %>  
-          | <%= link_to 'New Product', new_product_path %>
+          <%= link_to 'New Product', new_product_path %>
         <% end %>
       </p>
     </div>

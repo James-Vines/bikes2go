@@ -12,7 +12,7 @@
 
 	  <div class="col-lg-6 col-md-6 col-sm-12">
 	  	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3"><hr></div>
-	  	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 caption"><h1>Rentals</h1></div>
+	  	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 caption"><h1><a href="#">To Rent</a></h1></div>
 	  	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3"><hr></div>
 		
 			<!-- Carousel -->
@@ -28,12 +28,19 @@
 
 			  	<!-- Wrapper for slides -->
 		    	<div class="carousel-inner" role="listbox" >
-		      	<% @products.each do |product| %>
-	        	<div class="item<%= " active " if product == @products.first %>">
-	          	<%= image_tag(product.image_url, class: "img-responsive") %>
-	        	</div>
-		      	<% end %>
-		    	</div>
+		      	<div class="item active">
+            	<%= image_tag("rent1.jpg", class: "img-responsive my-image") %>
+            <div class="carousel-caption carousel-one"></div>
+          </div>
+          <div class="item">
+            	<%= image_tag("rent2.jpg", class: "img-responsive my-image") %>
+            <div class="carousel-caption carousel-two"></div>
+          </div>
+          <div class="item">
+            	<%= image_tag("rent3.jpg", class: "img-responsive my-image") %>
+            <div class="carousel-caption carousel-three"></div>
+          </div>
+        </div>
 
 		    	<!-- Controls --> 
 		    	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -49,7 +56,7 @@
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-12">
 	  	<div class="col-lg-4 col-md-3 col-sm-3 col-xs-3"><hr></div>
-	  	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 caption"><h1>For Sale</h1></div>
+	  	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 caption"><h1><%= link_to "For Sale", products_path %></h1></div>
 	  	<div class="col-lg-4 col-md-3 col-sm-3 col-xs-3"><hr></div>
 		
 			<!-- Carousel -->
@@ -66,7 +73,7 @@
 			  	<!-- Wrapper for slides -->
 		    	<div class="carousel-inner" role="listbox" >
 		      	<% @products.each do |product| %>
-	        	<div class="item<%= " active " if product == @products.third %>">
+	        	<div class="item<%= " active " if product == @products.first %>">
 	          	<%= image_tag(product.image_url, class: "img-responsive") %>
 	        	</div>
 		      	<% end %>

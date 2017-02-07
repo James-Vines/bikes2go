@@ -8,14 +8,8 @@
   <div class="col-md-6 col-sm-6 col-xs-12">
     <div class="products detail">
       <h3><%= product.name %></h3>
-      <h4>£<%= product.price %> per day.</h4>
+      <h4>£<%= product.price %>0</h4>
       <p><%= product.description %></p>
-                <p>
-            <% if signed_in? && current_user.admin? %>
-              <%= link_to 'Edit Description', edit_product_path(product) %> | 
-              <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-            <% end %>
-          </p>
     </div>
   </div>
   <%end %>
