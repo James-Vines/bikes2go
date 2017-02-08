@@ -1,5 +1,9 @@
 <section>
-	<div class="container">
+	<div class="container top">
+   	<ol class="breadcrumb">
+      <li><%= link_to "Home", static_pages_landing_page_path %></li>
+      <li class="active">Edit Description</li>
+    </ol>
 		<h1>Edit Product</h1>
 		<%= render 'form', product: @product %>
 
