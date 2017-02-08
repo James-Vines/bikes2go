@@ -2,12 +2,10 @@
 	<div class="container top">
    	<ol class="breadcrumb">
       <li><%= link_to "Home", static_pages_landing_page_path %></li>
-      <li class="active">Edit Description</li>
+      <li><%= link_to @product.name, @product %></li>
+      <li class="active">Edit Product</li>
     </ol>
 		<h1>Edit Product</h1>
 		<%= render 'form', product: @product %>
-
-		<%= link_to 'Show', @product %> |
-		<%= link_to 'Back', products_path %>
 	</div>
 </section>
